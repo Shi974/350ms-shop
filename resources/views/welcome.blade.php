@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    350ms Shop
                 </div>
 
                 <div class="links">
