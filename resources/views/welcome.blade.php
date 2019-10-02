@@ -2,21 +2,24 @@
 {{-- ['title' => 'Accueil'] --}}
 @section('content')
 {{-- DEBUT CONTENU BODY --}}
-<div class="content">
-    <div>
-        Laravel
+<div id="boutique">
+
+    <div class="jumbotron rounded-0 text-center">
+        <div class="container">
+            <h1 class="display-3">Boutique</h1>
+            <h2 class="text-black small-caps">Slogan</h2>
+        </div>
+        <p>Accroche</p>
     </div>
 
-    <div class="links">
-        <a href="https://laravel.com/docs">Docs</a>
-        <a href="https://laracasts.com">Laracasts</a>
-        <a href="https://laravel-news.com">News</a>
-        <a href="https://blog.laravel.com">Blog</a>
-        <a href="https://nova.laravel.com">Nova</a>
-        <a href="https://forge.laravel.com">Forge</a>
-        <a href="https://vapor.laravel.com">Vapor</a>
-        <a href="https://github.com/laravel/laravel">GitHub</a>
+    <div class="d-flex justify-content-center mt-5 resp text-center font-weight-bold">
+        <p>
+            Grid -- Présentation des items de la boutique<br/>
+            Boutons de tri en haut
+        </p>
+        {{-- <img src="img/logo/logo_crop.png"/> --}}
     </div>
+
 </div>
 {{-- FIN CONTENU BODY --}}
 @endsection
