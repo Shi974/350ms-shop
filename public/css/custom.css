@@ -1,0 +1,50 @@
+/********************************/
+/* COLORS 
+NAVY BLUE : #03051e
+GOLD : #978d58 */
+
+/********************************/
+/* GENERAL */
+* {
+    color: #03051e;
+}
+
+/********************************/
+/* NAVBAR */
+nav {
+    width: 100vw !important;
+    background-color: #03051e !important;
+}
+
+nav img {
+    max-width: 35px !important;
+    height: auto !important;
+}
+
+.navbar-toggler {
+    border: 3px outset #10BC61 !important;
+    box-shadow: 1px 1px 4px rgb(80, 79, 79);
+}
+
+/********************************/
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+footer .d-flex {
+    justify-content: space-around;
+}
+
+footer div {
+    width: 400px;
+}
+
+footer img {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+/********************************/
