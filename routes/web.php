@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'BoutiqueController@getAllProducts', function () {
+    return view('welcome');
+})->name('boutique');
+
+Route::get('/stock', function () {
+    return view('stock');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});

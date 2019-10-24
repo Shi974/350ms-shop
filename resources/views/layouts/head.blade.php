@@ -8,6 +8,9 @@
 {{-- <title>{{ page_title($title ?? '') }}</title> --}}
 <title>350ms Shop</title>
 
+<!-- ICON -->
+<link rel="icon" type="image/png" href="/img/logo/favicon.png" />
+
 <!-- STYLESHEET -->
 <link rel="stylesheet" href="/css/custom.css" />
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
