@@ -11,18 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// BOUTIQUE
 Route::get('/', 'BoutiqueController@getAllProducts', function () {
     return view('welcome');
-})->name('boutique');
+}) -> name('boutique');
 
-Route::get('/stock', function () {
+
+// STOCK
+Route::get('/stock', 'StockController@getAllProducts',function () {
     return view('stock');
+}) -> name('stock');
+
+Route::get('/stock/new', function () {
+    return view('new_product');
 });
 
+// ABOUT
 Route::get('/about', function () {
     return view('about');
 });

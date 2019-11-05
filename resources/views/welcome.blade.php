@@ -32,8 +32,7 @@
                     <div class="product-content">
                         <h3 class="title"><a href="#">{{ $item -> name }}</a></h3>
                         <div class="price">
-                            {{ $item -> sellingprice }}
-                            {{-- <span>$75.00</span> --}}
+                            {{ $item -> sellingprice }} €
                         </div>
                         <ul class="rating">
                             <li class="fa fa-star"></li>

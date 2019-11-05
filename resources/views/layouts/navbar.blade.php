@@ -21,7 +21,7 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="/about" title="En savoir plus sur nous" target="_blank"><i 
+                <a class="nav-link" href="/about" title="En savoir plus sur nous"><i 
                 class="text-gold fas fa-address-card" aria-hidden="true"></i> A propos de nous</a>
             </li>
         </ul>
