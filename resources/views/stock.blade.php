@@ -6,14 +6,11 @@
 
     <div class="jumbotron rounded-0 text-center">
         <div class="container">
-            <h1 class="display-3">Stock</h1>
-            <h2 class="text-black small-caps">Slogan</h2>
+            <h1 class="display-3">Gestion du stock</h1>
         </div>
-        <p>Accroche</p>
     </div>
 
     <div class="mt-5 text-center font-weight-bold">
-        
         <p>Il y actuellement {{ count($product) }} @if (count($product) > 1)produits @else produit @endif dans la base de 
             données.
         </p>
@@ -23,11 +20,13 @@
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nom</th>
+                    <th scope="col">Images</th>
                     <th scope="col">Genre(s)</th>
                     <th scope="col">Plateforme</th>
                     <th scope="col">Prix d'achat (€)</th>
                     <th scope="col">Prix de vente (€)</th>
                     <th scope="col">Stock</th>
+                    <th scope="col">Note</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -36,11 +35,16 @@
                 <tr>
                     <th scope="row">{{ $produit -> id}}</th>
                     <td> {{ $produit -> name}} </td>
-                    <td>{{ $produit -> genre }}@if ($produit -> genre_2 !== null), {{ $produit -> genre_2}} @endif</td>
+                    <td>
+                        <img src="{{ $produit -> picture }}" height="50px" /> @if ( $produit -> picture_2 !== null )
+                        <img src="{{ $produit -> picture_2 }}" height="50px" /> @endif
+                    </td>
+                    <td>{{ $produit -> genre }}@if ( $produit -> genre_2 !== null), {{ $produit -> genre_2}} @endif</td>
                     <td><img src="img/{{ $produit -> format }}.png" width="30px" alt="{{ $produit -> format }}" /></td>
-                    <td class="text-center"> {{$produit -> buyingprice }} </td>
-                    <td class="text-center"> {{$produit -> sellingprice }} </td>
-                    <td class="text-center"> {{$produit -> stock }} </td>
+                    <td class="text-center"> {{ $produit -> buyingprice }} </td>
+                    <td class="text-center"> {{ $produit -> sellingprice }} </td>
+                    <td class="text-center"> {{ $produit -> stock }} </td>
+                    <td class="text-center"> {{ $produit -> rating }} /5 </td>
                     <td class="text-center">
                         <a href="/stock/edit/{{ $produit -> id}}">
                             <button type="button" class="btn btn-warning">Modifier</button>

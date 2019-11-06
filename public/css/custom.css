@@ -13,7 +13,7 @@ DANGER : #9B1523 */
 }
 
 .text-gold {
-    color: #978d58;
+    color: #978d58 !important;
 }
 
 /********************************/
@@ -232,6 +232,11 @@ nav img {
     .product-grid3 .rating {
         margin: 0;
     }
+}
+/********************************/
+/* STOCK */
+#stock td, #stock tbody th {
+    vertical-align: middle;
 }
 
 /********************************/
